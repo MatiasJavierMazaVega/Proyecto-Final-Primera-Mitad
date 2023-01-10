@@ -1,0 +1,19 @@
+{
+  "name": "proyectoappmascotas",
+  "version": "1.0.0",
+  "description": "App de adopcion de mascotas para proyecto final de la primera mitad de la diplomatura",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatiasJavierMazaVega/Proyecto-Final-Primera-Mitad.git"
+  },
+  "author": "Matias Javier Maza Vega",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatiasJavierMazaVega/Proyecto-Final-Primera-Mitad/issues"
+  },
+  "homepage": "https://github.com/MatiasJavierMazaVega/Proyecto-Final-Primera-Mitad#readme"
+}
