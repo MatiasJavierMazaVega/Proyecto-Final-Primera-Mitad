@@ -1,0 +1,35 @@
+<div class="d flex justify content center text-center m-5" id="fondoTitulo">
+    <hr>
+    <h1 class="display-4 fw-normal" id="titulo">
+        {{titulo}}
+    </h1>
+    <hr>
+</div>
+
+<div class="container m-5">
+<form action="/adopcion" method="post">
+  <div class="mb-3">
+    <label for="nombrePersona" class="form-label">Nombre y Apellido</label>
+    <input type="text" class="form-control" id="nombrePersona" name="nombrePersona" required>
+  </div>
+  <div class="mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input type="email" class="form-control" id="email" name="email" required>
+  </div>
+  <div class="mb-3">
+    <label for="telefono" class="form-label">Teléfono</label>
+    <input type="text" class="form-control" id="telefono" name="telefono" required>
+  </div>
+   <div class="mb-3">
+    <label for="codigoMascota" class="form-label">Código de Mascota</label>
+    <input type="text" class="form-control" id="codigoMascota" name="codigoMascota" required>
+  </div> 
+
+<div class="mb-3 text-center">
+  <button type="submit" class="btn btn-outline-dark w-75" id="botonAdopcion">Adoptar!!!</button>
+</div>
+
+</form>
+</div>
+
+

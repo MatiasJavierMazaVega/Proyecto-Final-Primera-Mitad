@@ -1,0 +1,45 @@
+body{
+    background-color:antiquewhite
+}
+
+#fondoTitulo{
+    background-color:rgb(255, 198, 123);
+}
+
+#titulo{
+    color: rgb(248, 107, 25);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    
+}
+
+
+#banner {
+    background-image: url("../img/banner5.webp");
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position: center;
+    color: rgb(19, 5, 16);
+    text-shadow: 1px 1px 15px rgb(180, 180, 180);
+}
+
+#banner p {
+    color: rgb(245, 244, 244);
+    text-shadow: 1px 1px 5px rgb(0, 0, 0);
+}
+
+#pNosotros{
+    font-size: large;
+}
+
+#botonAdopcion{
+    background-color: rgb(252, 193, 0);
+}
+
+.album{
+    background-color: antiquewhite;
+}
+
+.card{
+    background-color: rgb(255, 202, 138);
+}
+

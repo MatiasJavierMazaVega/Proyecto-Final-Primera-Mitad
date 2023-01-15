@@ -1,0 +1,90 @@
+<div class="d flex justify content center text-center m-5" id="fondoTitulo">
+    <hr>
+    <h1 class="display-4 fw-normal" id="titulo">
+        El Rincón de los {{titulo}}
+    </h1>
+    <hr>
+</div>
+
+{{!-- Prueba album --}}
+
+  <div class="album py-5">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+         <div class="col">
+          <div class="card shadow-sm">
+              <img src="img/G00A.jpg" class="card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img"  alt="...">
+            <div class="card-body">
+              <p class="card-text"> Calmada, mimosa y autosuficiente. Ideal compañera pera personas mayores </p>
+                      <ul>
+          
+          <li> Código: G00A</li>
+          <li> Nombre provisorio: Luna {{ nombre }}</li>
+          <li> Género: Femenino</li>
+          <li> Raza: Bombay</li>
+          <li> Edad: 4 Años</li>
+          
+        </ul>
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <a class="btn btn-outline-dark" href="/adopcion" id="botonAdopcion">Adoptar</a>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+         <div class="col">
+          <div class="card shadow-sm">
+              <img src="img/G00B.jpg" class="card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img"  alt="...">
+            <div class="card-body">
+              <p class="card-text"> Muy sociable. Se lleva bien con otros animales, incluso perros </p>
+                      <ul>
+          
+          <li> Código: G00B</li>
+          <li> Nombre provisorio: Tom</li>
+          <li> Género: Masculino</li>
+          <li> Raza: Británico</li>
+          <li> Edad: 2 Años</li>
+          
+        </ul>
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <a class="btn btn-outline-dark" href="/adopcion" id="botonAdopcion">Adoptar</a>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+{{!-- Parte del album con base de datos --}}
+
+        {{#each datos}}
+        <div class="col">
+          <div class="card shadow-sm">
+              <img src="{{imagen}}" class="card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img"  alt="...">
+            <div class="card-body">
+              <p class="card-text"> {{ descripcion }} </p>
+                      <ul>
+          
+          <li> Código: {{ idGato }}</li>
+          <li> Nombre provisorio: {{ nombre }}</li>
+          <li> Género: {{ genero }}</li>
+          <li> Raza: {{ raza }}</li>
+          <li> Edad: {{ edad }}</li>
+          
+        </ul>
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <a class="btn btn-outline-dark" href="/adopcion" id="botonAdopcion">Adoptar</a>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        {{/each}}
+  </div>
+
+ 

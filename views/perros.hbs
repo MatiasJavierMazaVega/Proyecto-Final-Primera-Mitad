@@ -1,0 +1,98 @@
+<div class="d flex justify content center text-center m-5" id="fondoTitulo">
+    <hr>
+    <h1 class="display-4 fw-normal" id="titulo">
+        El Rincón de los {{titulo}}
+    </h1>
+    <hr>
+</div>
+
+
+
+  <div class="album py-5">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+              <img src="img/P00A.jpg" class="card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img"  alt="...">
+            <div class="card-body">
+              <p class="card-text"> Super tranquilo. Recomendado para dueños con experiencia y paciencia para su crianza </p>
+                      <ul>
+          
+          <li> Código: P00A </li>
+          <li> Nombre provisorio: Reina</li>
+          <li> Género: Femenino</li>
+          <li> Raza: Rottweiler</li>
+          <li> Edad: 3 meses</li>
+         
+          
+        </ul>
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <a class="btn btn-outline-dark" href="/adopcion" id="botonAdopcion">Adoptar</a>
+
+
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+ <div class="col">
+          <div class="card shadow-sm">
+              <img src="img/P00B.jpeg" class="card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img"  alt="...">
+            <div class="card-body">
+              <p class="card-text"> Le encantan los juguetes ruidosos. Puede requerir una dieta un poco específica</p>
+                      <ul>
+          
+          <li> Código: P00B </li>
+          <li> Nombre provisorio: Taquito</li>
+          <li> Género: Masculino</li>
+          <li> Raza: Chihuahua</li>
+          <li> Edad: 2 Años</li>
+         
+          
+        </ul>
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <a class="btn btn-outline-dark" href="/adopcion" id="botonAdopcion">Adoptar</a>
+
+
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+{{!-- Parte del album con base de datos --}}
+
+        {{#each datos}}
+        <div class="col">
+          <div class="card shadow-sm">
+              <img src="{{imagen}}" class="card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img"  alt="...">
+            <div class="card-body">
+              <p class="card-text"> {{ descripcion }} </p>
+                      <ul>
+          
+          <li> Código: {{ idPerro }}</li>
+          <li> Nombre provisorio: {{ nombre }}</li>
+          <li> Género: {{ genero }}</li>
+          <li> Raza: {{ raza }}</li>
+          <li> Edad: {{ edad }}</li>
+         
+          
+        </ul>
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <a class="btn btn-outline-dark" href="/adopcion" id="botonAdopcion">Adoptar</a>
+
+
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        {{/each}}
+  </div>
+
+ 
